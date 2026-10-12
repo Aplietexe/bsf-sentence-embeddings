@@ -1,0 +1,21 @@
+[project]
+name = "bsf-sentence-embeddings"
+version = "0.1.0"
+description = "Do block-sparse featurizers find concept manifolds in sentence embeddings? Code for the experiments."
+requires-python = "==3.13.*"
+dependencies = [
+    "datasets==5.1.0",
+    "matplotlib==3.11.2",
+    "numpy==2.5.4",
+    "pandas==3.0.6",
+    "scikit-learn==1.9.1",
+    "scipy==1.18.1",
+    "sentence-transformers==6.1.0",
+    "torch==2.14.1",
+    # Not imported here, but they run the encoders inside sentence-transformers.
+    "tokenizers==0.23.3",
+    "transformers==5.19.0",
+]
+
+[tool.ruff]
+line-length = 120
